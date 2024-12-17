@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Udvash Class Downloader",
+    "description": "Download classes from Udvash web portal for later use, not to spread.",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "js": ["scripts.js"],
+            "matches": [
+            "https://online.udvash-unmesh.com/Routine/ClassDetails?courseId=*",
+            "https://online.udvash-unmesh.com/Content/DisplayContentCardDetails?masterCourseId=*"
+            ]
+        }
+    ]
+}
